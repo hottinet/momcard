@@ -1,0 +1,70 @@
+html body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+}
+
+.note {
+	color: white;
+	text-align: center;
+}
+
+.spa {
+	width: 50%;
+}
+
+@keyframes slide {
+	from { transform: translateX(-70%); }
+	to { transform: translateX(100%); }
+}
+
+h1 {
+	font-family: ohno-blazeface, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	margin: 0;
+	animation: slide 6s infinite linear;
+}
+
+.slider {
+	background-color: black;
+}
+
+.middle {
+	background: linear-gradient(90deg,  rgba(252,176,69,1) 0%, rgba(253,29,29,1) 50%, rgba(131,58,180,1) 100%);
+}
+
+.notmiddle {
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.notsmallmiddle{
+	background: linear-gradient(90deg, rgba(253,187,45,1) 0%, rgba(34,193,195,1) 100%);
+}
+
+.smallmiddle {
+	background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.small1 {
+	width: 100%;
+	height: 70px;
+	position: relative;
+}
+
+.big1 {
+	width: 100%;
+	height: 70px;
+	position: relative;
+}
+
+.bigWrapper {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+}
+
