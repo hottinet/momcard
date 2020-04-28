@@ -7,13 +7,44 @@ body {
 	background-color: black;
 }
 
-.note {
+.hearts {
 	color: white;
 	text-align: center;
 }
 
-.spa {
-	width: 50%;
+@keyframes appearOne {
+	0% { opacity: 0%; }
+	50% { opacity: 100%; }
+	100% { opacity: 0%; }
+}
+
+@keyframes appearTwo {
+	0% { opacity: 100%; }
+	50% { opacity: 0%; }
+	100% { opacity: 100%; }
+}
+
+@keyframes appearThree {
+	0% { opacity: 100%; }
+	25% { opacity: 0%; }
+	50% { opacity: 100%; }
+	75% { opacity: 0%; }
+	100% { opacity: 100%; }
+}
+
+.heartOne {
+	transform: scale(.9) translate(100px, 5px);
+	animation: appearOne 6s infinite linear;
+}
+
+.heartTwo {
+	transform: scale(1.1) translate(0px, 100px);
+	animation: appearTwo 6s infinite linear;
+}
+
+.heartThree {
+	transform: translate(-80px, -20px);
+	animation: appearThree 6s infinite linear;
 }
 
 @keyframes slide {
@@ -22,7 +53,7 @@ body {
 }
 
 h1 {
-	font-family: ohno-blazeface, sans-serif;
+	font-family: ohno-lazeface, sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	color: white;
@@ -68,3 +99,20 @@ h1 {
 	width: 100%;
 }
 
+@media (max-width: 600px) {
+	.heartOne {
+		width: 40%;
+		transform:  translate(100px, 40px);
+	}
+	
+	.heartTwo {
+		width: 40%;
+		transform:  translate(0px, 0px);
+	}
+	
+	.heartThree {
+		width: 30%;
+		transform: translate(-80px, 0px);
+	}
+
+}
