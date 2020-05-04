@@ -18,6 +18,12 @@ body {
 	100% { opacity: 0%; }
 }
 
+@-webkit-keyframes appearOne {
+	0% { opacity: 0%; }
+	50% { opacity: 100%; }
+	100% { opacity: 0%; }
+}
+
 @keyframes appearTwo {
 	0% { opacity: 100%; }
 	50% { opacity: 0%; }
@@ -35,6 +41,7 @@ body {
 .heartOne {
 	transform: scale(.9) translate(100px, 5px);
 	animation: appearOne 6s infinite linear;
+	-webkit-animation: appearOne 6s infinite linear;
 }
 
 .heartTwo {
