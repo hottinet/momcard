@@ -19,9 +19,9 @@ body {
 }
 
 @-webkit-keyframes appearOne {
-	0% { opacity: 0%; }
-	50% { opacity: 100%; }
-	100% { opacity: 0%; }
+	0% { -webkit-opacity: 0%; }
+	50% { -webkit-opacity: 100%; }
+	100% { -webkit-opacity: 0%; }
 }
 
 @keyframes appearTwo {
