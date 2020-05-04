@@ -12,16 +12,16 @@ body {
 	text-align: center;
 }
 
-@keyframes appearOne {
+/* @keyframes appearOne {
 	0% { opacity: 0%; }
 	50% { opacity: 100%; }
 	100% { opacity: 0%; }
-}
+} */
 
-@-webkit-keyframes appearOne {
-	0% { -webkit-opacity: 0%; }
-	50% { -webkit-opacity: 100%; }
-	100% { -webkit-opacity: 0%; }
+@keyframes appearOne {
+	0% { transform: translateX(100px) }
+	50% { transform: translateX(50px)}
+	100% { transform: translateX(300px) }
 }
 
 @keyframes appearTwo {
@@ -41,7 +41,6 @@ body {
 .heartOne {
 	transform: scale(.9) translate(100px, 5px);
 	animation: appearOne 6s infinite linear;
-	-webkit-animation: appearOne 6s infinite linear;
 }
 
 .heartTwo {
