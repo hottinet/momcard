@@ -53,12 +53,16 @@ body {
 }
 
 h1 {
-	font-family: ohno-lazeface, sans-serif;
-	font-weight: 700;
+	font-family: ohno-blazeface, sans-serif;
 	font-style: normal;
+	font-weight: 100;
 	color: white;
 	margin: 0;
 	animation: slide 6s infinite linear;
+}
+
+h2 {
+	font-family: sans-serif;
 }
 
 p {
@@ -117,10 +121,13 @@ p {
 
 .recipe {
 	margin-top: 0;
+	font-family: ohno-blazeface, sans-serif;
+	font-style: normal;
+	font-weight: 100;
 }
 
 a {
-	color: yellow;
+	color:rgba(253,187,45,1);
 	font-size: 36px;
 	text-decoration: none;
 	font-weight: 700;
@@ -128,10 +135,6 @@ a {
 
 a:hover {
 	color: teal;
-}
-
-.oddLink {
-	color: orange;
 }
 
 .oddLink:hover {
